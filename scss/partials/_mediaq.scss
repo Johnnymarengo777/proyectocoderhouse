@@ -1,0 +1,18 @@
+@keyframes appear{
+    from{
+        transform: translate(-500px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 952px){
+   html{
+        padding-left: 100px;
+    }
+
+} 
+@media screen and (max-width:858px){
+    
+}

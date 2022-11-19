@@ -1,0 +1,155 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1em;
+    height: 100vh;
+}
+html{
+    font-size: 62,5%;
+}
+
+#grilla{
+height: 100vh;
+display: grid;
+grid-template-columns: 15vw 1fr 20vw;
+grid-template-rows: 100px 50px 100px; 
+grid-template-areas: 
+"header header header"
+"aside navegador navegador"
+"aside productos productos"
+"aside productos productos"
+"footer footer footer";
+}
+.header{
+background-image: linear-gradient(45deg, red , rgb(181, 60, 60)) ;
+grid-area: header;
+height: 100px;
+padding-top: 10px;
+text-decoration: none;
+}
+header div a h1{
+color: black;
+}
+.name{
+color: black;
+}
+section nav ul li{
+transform: translate(35vw);
+text-decoration: none;    
+color: white;
+list-style: none;
+display: inline-flex;
+
+}
+a{
+text-decoration: none;
+color: aliceblue;
+justify-content: center;
+}
+.buscador{
+display: grid;
+justify-self: center;
+margin-left: 470px;
+height: 30px;
+width: 300px;
+margin-top:-25px;
+}
+.productos{
+background-color:white;
+grid-area: productos;
+display: inline-flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+.navegador{
+background-color:white;
+grid-area: navegador;
+display: inline-flex;
+justify-content: center;
+padding: 10px;
+}
+.aside{
+color: black;
+grid-area: aside;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+animation: appear .8s 1 linear;
+}
+.aside__items{
+margin: 20px;
+list-style-type: none;
+}
+.listas--ordenadas{
+color: black;
+grid-area: aside;
+}
+.footer{
+background-color: darkgrey;  
+display: flex;
+justify-content: space-between;
+grid-area: footer;
+padding: 10px;
+}
+
+.aside__items{
+list-style-type: none;
+color: black;
+margin: 20px;
+}
+
+.registro{
+width: fit-content;
+margin: 0 auto;
+padding: 150px;
+}
+
+.footer__registro{
+background-color: darkgray;
+padding: 1em 0;
+text-align: center;
+position: relative;
+bottom: 0%;
+width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@keyframes appear{
+    from{
+        transform: translate(-500px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 952px){
+   html{
+        padding-left: 100px;
+    }
+
+} 
+@media screen and (max-width:858px){
+    
+}
+
+/*maps
+
+$background:(
+    header:header,
+    footer:footer
+);
+@each $key, $value in $bakcground  {
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}*/

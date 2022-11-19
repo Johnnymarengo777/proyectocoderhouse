@@ -1,0 +1,16 @@
+.footer{
+    background-color: darkgrey;  
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    padding: 10px;
+    }
+.footer__registro{
+    @extend .footer;
+    background-color: darkgray;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    }
