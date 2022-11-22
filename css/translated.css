@@ -108,7 +108,7 @@ a {
 }*/
 .footer__registro {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   background-color: darkgray;
   padding: 1em 0;
   text-align: center;
